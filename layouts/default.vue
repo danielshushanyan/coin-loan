@@ -2,7 +2,7 @@
   <v-app dark>
     <v-toolbar app>
       <NuxtLink class="toolbar-link" to="/budgets">
-        <v-toolbar-title v-text="title" />
+        <logo />
       </NuxtLink>
     </v-toolbar>
 
@@ -15,11 +15,11 @@
 </template>
 
 <script>
+import Logo from '../components/logo'
+
 export default {
-  data() {
-    return {
-      title: 'CoinLoan.io'
-    }
+  components: {
+    Logo
   }
 }
 </script>

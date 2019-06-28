@@ -6,7 +6,7 @@
     </v-btn>
     <v-card class="mb-3">
       <v-card-title v-if="budget">
-        <h1 class="display-1">{{ budget.name }}</h1>
+        <h1 class="display-1">Budget for {{ budget.name }}</h1>
         <h2 class="display-1 ml-auto">
           {{ budget.amount }} {{ budget.currency }}
         </h2>
@@ -17,7 +17,7 @@
     </v-card>
     <cl-form
       v-if="budget"
-      form-field-type="Tariff"
+      form-field-type="Transaction"
       class="budget-form mb-2"
       @submitForm="setTransaction"
     />
